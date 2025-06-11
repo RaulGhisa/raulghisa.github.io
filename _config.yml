@@ -21,7 +21,7 @@
 title: Raul Ghișa
 author:
   name: Raul Ghișa
-  photo: /assets/images/photo.jpeg
+  photo: /assets/images/photo.png
 # email:
 # description: >- # this means to ignore newlines until "baseurl:"
 #   Write an awesome description for your new site here. You can edit this
@@ -37,6 +37,7 @@ url: "https://raulghisa.github.io" # the base hostname & protocol for your site,
 twitter_username: raulghisax 
 github_username: raulghisa
 linkedin_username: raulghisa
+google_scholar: https://scholar.google.com/citations?hl=en&user=V8AFd7UAAAAJ
 
 # Build settings
 theme: minima
