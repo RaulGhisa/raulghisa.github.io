@@ -1,6 +1,54 @@
 ---
-# Feel free to add content and custom Front Matter to this file.
-# To modify the layout, see https://jekyllrb.com/docs/themes/#overriding-theme-defaults
-
-layout: home
+layout: default
 ---
+
+<h1 class="post-title p-name" itemprop="name headline">{{ site.author.name }} </h1>
+
+<h2 style='margin-top:0em; margin-bottom:1em'>AI and Robots</h2>
+
+<table style='table-layout:fixed; border:none; border-collapse:collapse; cellspacing:0; cellpadding:0'>
+<tr>
+
+<td width="16%" style='border:none; vertical-align: top;'>
+    <img src="{{ site.photo }}"/>
+</td>
+
+<td style="border:none">
+
+Hello, I'm Raul!
+
+<!-- CSS of table defined in _includes/head.html -->
+<div class="Rtable Rtable--5cols Rtable--collapse">
+  <!-- <div class="Rtable-cell"> <a href="mailto:{{ site.author.email }}?subject=Hello"><i class="far fa-envelope" title="Email">&nbsp;</i>email</a> </div> -->
+  <div class="Rtable-cell"> <a href="https://github.com/{{ site.github_username }}"><i class="fab fa-fw fa-github" >&nbsp;</i>github</a> </div>
+  <div class="Rtable-cell"> <a href="https://www.linkedin.com/in/{{ site.linkedin_username }}"> <i class="fab fa-linkedin" >&nbsp;</i>linkedin</a> </div>
+  <!-- <div class="Rtable-cell"> <a href="{{ site.google_scholar }}"> <i class="ai ai-google-scholar ai-1x" title="Google Scholar">&nbsp;</i>scholar</a> </div>
+  <div class="Rtable-cell"> <a href="{{ "/feed.xml" | relative_url }}"><i class="fas fa-fw fa-rss" ></i>RSS</a></div> -->
+</div>
+
+</td>
+</tr>
+</table> 
+
+<!-- <center>
+<div class="info-panel">
+<p> <strong>NEW (2025):</strong> if you like my content and would like to show appreciation, please donate instead to the <a href="https://ipoporto.pt/en/eu-doente/clinicas/">children's cancer hospital in Porto</a> via this <a href="https://www.gofundme.com/f/support-the-childrens-cancer-hospital-in-porto">GoFundMe campaign</a> or a <a href="https://ipoporto-pt.translate.goog/nos-ipo/como-ajudar-o-ipo-porto/?_x_tr_sl=pt-PT&_x_tr_tl=en&_x_tr_hl=en-US&_x_tr_pto=wapp">bank transfer to the hospital</a>. Thank you for caring ❤️‍🩹</p>
+</div>
+</center> -->
+
+
+<table style='border:none; border-collapse:collapse; cellspacing:0; cellpadding:0'>
+{%- assign date_format = site.minima.date_format | default: "%Y" -%}
+{% for post in site.posts %}
+<tr>
+<td class="align-top" style="border:none">
+{{ post.date | date: date_format }}
+</td>
+<td class="align-top" style="border:none">
+<a href="{{ post.url }}">{{ post.title }}</a>
+</td>
+</tr>
+{% endfor %}
+</table>
+
+
