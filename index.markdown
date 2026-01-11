@@ -3,17 +3,12 @@ layout: default
 title: Home
 ---
 
-# {{ site.author.name }}
-
 <div class="profile-section">
   <div class="profile-image">
     <img src="{{ site.author.photo | default: '/assets/images/profile.jpg' }}" alt="Profile photo" />
   </div>
   <div class="profile-info">
-    <h2>PhD Student in Robotics</h2>
-    <p><strong>{{ site.author.department | default: "Department of Computer Science" }}</strong><br>
-    {{ site.author.university | default: "University Name" }}</p>
-    
+    <h2>{{ site.author.name }}</h2>
     <div class="contact-links">
       <a href="mailto:{{ site.author.email }}"><i class="fas fa-envelope"></i> Email</a>
       {% if site.author.cv %}<a href="{{ site.author.cv }}"><i class="fas fa-file-pdf"></i> CV</a>{% endif %}
@@ -26,20 +21,9 @@ title: Home
 
 ## About
 
-I'm a PhD student working on **robotic failures and fault tolerance**. My research focuses on understanding why robots fail and developing systems that can recover from failures gracefully.
+I'm a PhD student at University of Nottingham, working on robotic manipulation failures and making robots more reliable and robust in real-world environments. My research focuses on understanding why robots fail and developing systems that can recover from failures gracefully with human help.
 
-{{ site.bio | default: "I'm interested in making robots more reliable and robust in real-world environments. My work spans failure detection, diagnosis, and recovery mechanisms in autonomous systems." }}
-
-**Advisor**: {{ site.author.advisor | default: "Prof. [Advisor Name]" }}
-
----
-
-## Research Focus
-
-- **Robotic Failure Analysis**: Understanding failure modes in autonomous systems
-- **Fault Detection & Diagnosis**: Real-time monitoring and failure identification
-- **Recovery Mechanisms**: Developing strategies for graceful degradation and recovery
-- **System Reliability**: Building more robust robotic architectures
+**Advisor**: <a href="https://www.nottingham.ac.uk/computerscience/people/ayse.kucukyilmaz">{{ site.author.advisor_ayse }}</a>, <a href="https://www.nottingham.ac.uk/computerscience/People/luis.figueredo">{{ site.author.advisor_luis }}</a>, <a href="https://www.nottingham.ac.uk/computerscience/people/ender.ozcan">{{ site.author.advisor_ender }}</a>
 
 ---
 
@@ -167,7 +151,7 @@ I'm a PhD student working on **robotic failures and fault tolerance**. My resear
   width: 180px;
   height: 180px;
   object-fit: cover;
-  border-radius: 8px;
+  border-radius: 5%;
 }
 
 .profile-info h2 {

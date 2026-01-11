@@ -1,29 +1,13 @@
 ---
 layout: post
-title:  "Welcome to Jekyll!"
-date:   2025-05-16 11:20:39 +0100
-categories: jekyll update
+title:  "7th Manipulation Workshop in Edinburgh"
+date:   2026-01-06 11:20:39 +0100
+categories: update
 ---
-You’ll find this post in your `_posts` directory. Go ahead and edit it and re-build the site to see your changes. You can rebuild the site in many different ways, but the most common way is to run `jekyll serve`, which launches a web server and auto-regenerates your site when a file is updated.
+I had a great time at the 7th Manipulation Workshop in Edinburgh where I presented my project "Shared Autonomy for Failure Recovery in Robotic Manipulation". 
 
-Jekyll requires blog post files to be named according to the following format:
+I really enjoyed talking to fellow roboticists about the latest trends in tactile sensors, robotics AI, safety and dexterous object manipulation.
 
-`YEAR-MONTH-DAY-title.MARKUP`
+Thanks to the organizers for a brilliant event!
 
-Where `YEAR` is a four-digit number, `MONTH` and `DAY` are both two-digit numbers, and `MARKUP` is the file extension representing the format used in the file. After that, include the necessary front matter. Take a look at the source for this post to get an idea about how it works.
-
-Jekyll also offers powerful support for code snippets:
-
-{% highlight ruby %}
-def print_hi(name)
-  puts "Hi, #{name}"
-end
-print_hi('Tom')
-#=> prints 'Hi, Tom' to STDOUT.
-{% endhighlight %}
-
-Check out the [Jekyll docs][jekyll-docs] for more info on how to get the most out of Jekyll. File all bugs/feature requests at [Jekyll’s GitHub repo][jekyll-gh]. If you have questions, you can ask them on [Jekyll Talk][jekyll-talk].
-
-[jekyll-docs]: https://jekyllrb.com/docs/home
-[jekyll-gh]:   https://github.com/jekyll/jekyll
-[jekyll-talk]: https://talk.jekyllrb.com/
+![Workshop photo](/assets/images/venues/7th-manipulation-workshop.jpg)

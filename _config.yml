@@ -21,7 +21,18 @@
 title: Raul Ghișa
 author:
   name: Raul Ghișa
+  email: psxrg6@nottingham.ac.uk
   photo: /assets/images/photo.png
+  university: University of Nottingham
+  school: School of Computer Science
+  group: Cyber-physical Health and Assistive Robotics Technologies (CHART)
+  twitter: raulghisax 
+  github: raulghisa
+  linkedin: raulghisa
+  google_scholar: https://scholar.google.com/citations?hl=en&user=V8AFd7UAAAAJ
+  advisor_ayse: Ayse Kucukyilmaz
+  advisor_luis: Luis Figueredo
+  advisor_ender: Ender Özcan
 # email:
 # description: >- # this means to ignore newlines until "baseurl:"
 #   Write an awesome description for your new site here. You can edit this
@@ -34,10 +45,6 @@ assets: /assets/
 baseurl: "" # the subpath of your site, e.g. /blog
 url: "https://raulghisa.github.io" # the base hostname & protocol for your site, e.g. http://example.com
 
-twitter_username: raulghisax 
-github_username: raulghisa
-linkedin_username: raulghisa
-google_scholar: https://scholar.google.com/citations?hl=en&user=V8AFd7UAAAAJ
 
 # Build settings
 theme: minima
