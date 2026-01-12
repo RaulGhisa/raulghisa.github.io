@@ -10,11 +10,11 @@ title: Home
   <div class="profile-info">
     <h2>{{ site.author.name }}</h2>
     <div class="contact-links">
-      <a href="mailto:{{ site.author.email }}"><i class="fas fa-envelope"></i> Email</a>
+      <a href="mailto:{{ site.author.email }}?subject=Hello"><i class="far fa-envelope" title="Email">&nbsp;</i>email</a> 
       {% if site.author.cv %}<a href="{{ site.author.cv }}"><i class="fas fa-file-pdf"></i> CV</a>{% endif %}
-      {% if site.author.google_scholar %}<a href="{{ site.author.google_scholar }}"><i class="ai ai-google-scholar"></i> Scholar</a>{% endif %}
-      {% if site.author.github %}<a href="https://github.com/{{ site.author.github }}"><i class="fab fa-github"></i> GitHub</a>{% endif %}
-      {% if site.author.twitter %}<a href="https://twitter.com/{{ site.author.twitter }}"><i class="fab fa-twitter"></i> Twitter</a>{% endif %}
+      {% if site.author.google_scholar %}<a href="{{ site.author.google_scholar }}"><i class="ai ai-google-scholar"></i> scholar</a>{% endif %}
+      {% if site.author.github %}<a href="https://github.com/{{ site.author.github }}"><i class="fab fa-github"></i> github</a>{% endif %}
+      {% if site.author.twitter %}<a href="https://twitter.com/{{ site.author.twitter }}"><i class="fab fa-twitter"></i> twitter</a>{% endif %}
     </div>
   </div>
 </div>
@@ -46,98 +46,19 @@ I'm a PhD student at University of Nottingham, working on robotic manipulation f
   </div>
 </div>
 {% endfor %}
-
-{% if site.posts.size == 0 %}
-<div class="post-item">
-  <div class="post-date">Jan 2025</div>
-  <div class="post-content">
-    <h3><a href="#">Failure Modes in Autonomous Navigation Systems</a></h3>
-    <p>An analysis of common failure patterns observed in mobile robot navigation and their underlying causes...</p>
-    <div class="post-tags">
-      <span class="tag">navigation</span>
-      <span class="tag">failure-analysis</span>
-    </div>
-  </div>
-</div>
-
-<div class="post-item">
-  <div class="post-date">Dec 2024</div>
-  <div class="post-content">
-    <h3><a href="#">Recovery Strategies for Manipulation Failures</a></h3>
-    <p>Exploring different approaches robots can use to recover from grasping and manipulation errors...</p>
-    <div class="post-tags">
-      <span class="tag">manipulation</span>
-      <span class="tag">recovery</span>
-    </div>
-  </div>
-</div>
-
-<div class="post-item">
-  <div class="post-date">Nov 2024</div>
-  <div class="post-content">
-    <h3><a href="#">Sensor Failure Detection in Real-Time</a></h3>
-    <p>Methods for detecting when sensors provide unreliable data and how to handle sensor degradation...</p>
-    <div class="post-tags">
-      <span class="tag">sensors</span>
-      <span class="tag">fault-detection</span>
-    </div>
-  </div>
-</div>
-{% endif %}
-
-<p><a href="{{ '/posts/' | relative_url }}">→ View all posts</a></p>
+<!-- <p><a href="{{ '/posts/' | relative_url }}">→ View all posts</a></p> -->
 
 ---
 
 ## Publications
-
-{% if site.publications %}
 {% for pub in site.publications %}
 <div class="publication">
-  <h4>{{ pub.title }}</h4>
+  <h4><a href="{{ pub.link }}">{{ pub.title }}</a></h4>
   <p class="authors">{{ pub.authors }}</p>
   <p class="venue"><em>{{ pub.venue }}</em>{% if pub.year %}, {{ pub.year }}{% endif %}</p>
   {% if pub.status %}<p class="status">{{ pub.status }}</p>{% endif %}
-  {% if pub.links %}
-  <div class="pub-links">
-    {% for link in pub.links %}
-    <a href="{{ link.url }}" class="pub-link">{{ link.name }}</a>
-    {% endfor %}
-  </div>
-  {% endif %}
 </div>
 {% endfor %}
-{% else %}
-<div class="publication">
-  <h4>Robust Failure Recovery in Multi-Robot Systems</h4>
-  <p class="authors"><strong>{{ site.author.name | default: "Your Name" }}</strong>, {{ site.author.advisor | default: "Advisor Name" }}</p>
-  <p class="venue"><em>IEEE International Conference on Robotics and Automation (ICRA)</em>, 2025</p>
-  <p class="status">Under Review</p>
-  <div class="pub-links">
-    <a href="#" class="pub-link">PDF</a>
-    <a href="#" class="pub-link">Code</a>
-  </div>
-</div>
-
-<div class="publication">
-  <h4>Learning from Robot Failures: A Data-Driven Approach</h4>
-  <p class="authors"><strong>{{ site.author.name | default: "Your Name" }}</strong>, Co-author Name, {{ site.author.advisor | default: "Advisor Name" }}</p>
-  <p class="venue"><em>Workshop on Robot Learning (WRL)</em>, 2024</p>
-  <div class="pub-links">
-    <a href="#" class="pub-link">PDF</a>
-    <a href="#" class="pub-link">Poster</a>
-  </div>
-</div>
-{% endif %}
-
----
-
-## Contact
-
-**Email**: [{{ site.author.email }}](mailto:{{ site.author.email }})  
-**Office**: {{ site.author.office | default: "Graduate Student Office, Robotics Lab" }}
-
----
 
 <style>
 .profile-section {
@@ -184,8 +105,8 @@ I'm a PhD student at University of Nottingham, working on robotic manipulation f
   display: flex;
   gap: 1rem;
   margin-bottom: 1.5rem;
-  padding-bottom: 1rem;
-  border-bottom: 1px solid #eee;
+  /* padding-bottom: 1rem; */
+  /* border-bottom: 1px solid #eee; */
 }
 
 .post-date {
@@ -235,8 +156,8 @@ I'm a PhD student at University of Nottingham, working on robotic manipulation f
 
 .publication {
   margin-bottom: 1.5rem;
-  padding-bottom: 1rem;
-  border-bottom: 1px solid #eee;
+  /* padding-bottom: 1rem;
+  border-bottom: 1px solid #eee; */
 }
 
 .publication h4 {

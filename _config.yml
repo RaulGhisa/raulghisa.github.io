@@ -21,7 +21,7 @@
 title: Raul Ghișa
 author:
   name: Raul Ghișa
-  email: psxrg6@nottingham.ac.uk
+  email: euraulghisa@gmail.com
   photo: /assets/images/photo.png
   university: University of Nottingham
   school: School of Computer Science
@@ -40,6 +40,10 @@ author:
 #   Google search results) and in your feed.xml site description.
 
 assets: /assets/
+
+collections:
+  publications:
+    output: true
 
 # domain: raulghisa.github.io
 baseurl: "" # the subpath of your site, e.g. /blog
